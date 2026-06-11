@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-09 20:09:53",
+  "dataset": "ivisio_hhid",
+  "device": "cuda",
+  "model_profile": {
+    "params_total_M": 11.831488,
+    "params_train_M": 0.0,
+    "gflops": 50.341011968,
+    "infer_ms_mean": 6.756852176040411,
+    "infer_ms_std": 0.3462721966393614,
+    "infer_ms_p95": 7.618184108287096
+  },
+  "results": {
+    "protonet": {
+      "proto_acc": 0.955000002682209
+    },
+    "writer_id": {
+      "writer_id_acc": 0.9074074074074074,
+      "writer_id_mcc": 0.9072467516296981,
+      "writer_id_roc_auc": 0.9528301886792453
+    },
+    "ink_mismatch": {
+      "ink_mismatch_acc": 0.9388888888888889,
+      "ink_mismatch_auc": 0.9914866132318231,
+      "ink_mismatch_eer": 0.06114315751139757
+    },
+    "writer_verif": {
+      "verif_auc": 0.9936153615361536,
+      "verif_eer": 0.05000500050005,
+      "verif_acc": 0.95
+    },
+    "forgery": {
+      "forgery_acc": 0.6851851851851852,
+      "forgery_auc": 0.5526315789473684
+    },
+    "age_gender": {
+      "gender_label_acc": 0.8518518518518519,
+      "age_bin_roc_auc": 0.6064814814814814,
+      "age_bin_acc": 0.37037037037037035
+    }
+  }
+}

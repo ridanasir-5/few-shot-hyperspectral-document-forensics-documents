@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-03-09 21:46:00",
+  "dataset": "uwa",
+  "device": "cuda",
+  "model_profile": {
+    "params_total_M": 11.467712,
+    "params_train_M": 11.467712,
+    "gflops": 21.67116032,
+    "infer_ms_mean": 3.3381433971226215,
+    "infer_ms_std": 0.30420610476837784,
+    "infer_ms_p95": 3.6515956511721015
+  },
+  "results": {
+    "protonet": {
+      "proto_acc": 1.0
+    },
+    "writer_id": {
+      "writer_id_acc": 1.0,
+      "writer_id_mcc": 1.0,
+      "writer_id_roc_auc": 1.0
+    },
+    "ink_mismatch": {
+      "ink_mismatch_acc": 1.0,
+      "ink_mismatch_auc": 1.0,
+      "ink_mismatch_eer": 0.0
+    },
+    "writer_verif": {
+      "verif_auc": 1.0,
+      "verif_eer": 0.0,
+      "verif_acc": 1.0
+    },
+    "forgery": {
+      "forgery_acc": 1.0,
+      "forgery_auc": 1.0
+    }
+  }
+}

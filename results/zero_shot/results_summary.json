@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-03-09 18:33:12",
+  "device": "cuda",
+  "model_profile": {
+    "params_total_M": 11.831488,
+    "params_train_M": 11.831488,
+    "gflops": 50.341011968,
+    "infer_ms_mean": 6.589810783043504,
+    "infer_ms_std": 0.1792459298292889,
+    "infer_ms_p95": 6.8447362165898085
+  },
+  "results": {
+    "protonet": {
+      "proto_acc": 0.955000002682209
+    },
+    "writer_id_ivisio": {
+      "writer_id_acc": 0.9074074074074074,
+      "writer_id_mcc": 0.9072467516296981,
+      "writer_id_roc_auc": 0.9528301886792453
+    },
+    "ink_mismatch_ivisio": {
+      "ink_mismatch_acc": 0.9388888888888889,
+      "ink_mismatch_auc": 0.9914866132318231,
+      "ink_mismatch_eer": 0.06114315751139757
+    },
+    "ink_mismatch_uwa": {
+      "ink_mismatch_acc": 0.5428571428571428,
+      "ink_mismatch_auc": 0.5698924731182796,
+      "ink_mismatch_eer": 0.45657568238213403
+    },
+    "writer_verif_ivisio": {
+      "verif_auc": 0.9936153615361536,
+      "verif_eer": 0.05000500050005,
+      "verif_acc": 0.95
+    },
+    "writer_verif_uwa": {
+      "verif_auc": 0.5989900727835819,
+      "verif_eer": 0.4330142966321088,
+      "verif_acc": 0.567
+    },
+    "forgery_ivisio": {
+      "forgery_acc": 0.6851851851851852,
+      "forgery_auc": 0.5526315789473684
+    },
+    "age_gender_ivisio": {
+      "gender_label_acc": 0.8518518518518519,
+      "age_bin_roc_auc": 0.6064814814814814,
+      "age_bin_acc": 0.37037037037037035
+    },
+    "cross_dataset": {
+      "cross_dataset_acc": 0.0
+    }
+  }
+}

@@ -1,0 +1,54 @@
+======================================================================
+  HYPERSPECTRAL FORENSICS v4 — UWA RESULTS
+  Generated  : 2026-03-09 21:46:00
+  Dataset    : UWA WIHSI  (7 writers, 70 cubes, 33 bands, 480×752)
+  Device     : cuda
+======================================================================
+
+── MODEL PROFILE ──────────────────────────────────────────────────
+  Architecture     : ResNet18Encoder (ProtoNet, Exp-5 style)
+  Input            : (1, 33, 480, 752)
+  Total params     : 11.4677 M
+  Trainable params : 11.4677 M
+  GFLOPs           : 21.6712
+  Inference mean   : 3.34 ms
+  Inference std    : 0.30 ms
+  Inference p95    : 3.65 ms
+
+── TASK RESULTS ─────────────────────────────────────────────────────
+
+  ProtoNet Backbone
+  ──────────────────────────────────────────────────
+    Episodic Acc                  : 1.0000
+
+  Task 1: Writer ID
+  ──────────────────────────────────────────────────
+    Accuracy                      : 1.0000
+    MCC                           : 1.0000
+    ROC AUC                       : 1.0000
+
+  Task 2: Ink Mismatch
+  ──────────────────────────────────────────────────
+    Acc@EER                       : 1.0000
+    AUC                           : 1.0000
+    EER                           : 0.0000
+
+  Task 3: Writer Verif
+  ──────────────────────────────────────────────────
+    AUC                           : 1.0000
+    EER                           : 0.0000
+    Acc@EER                       : 1.0000
+
+  Task 4: Forgery Det
+  ──────────────────────────────────────────────────
+    Accuracy                      : 1.0000
+    AUC                           : 1.0000
+
+── OUTPUT FILES ────────────────────────────────────────────────────
+  Directory : ./results_uwa/
+  Plots     : *_cm_*.png  *_roc_*.png  *_pr_*.png  *_det_*.png
+              *_score_hist_*.png  *_f1bar_*.png  *_tsne_*.png
+              proto_sim_heatmap_*.png  model_profile_*.png  pipeline_radar.png
+  Results   : results_uwa.txt  results_uwa.json
+
+======================================================================
