@@ -1,10 +1,6 @@
 # few-shot-hyperspectral-document-forensics-documents
 Code for "Few-Shot Hyperspectral Representation Learning for Multi-Task Forensic Document Analysis"
 
-
-
-# few-shot-hyperspectral-document-forensics
-
 Spectral--spatial representation learning framework for hyperspectral forensic document analysis using episodic prototypical learning, supporting writer identification, writer verification, ink mismatch detection, forgery detection, and demographic inference.
 
 # Few-Shot Hyperspectral Representation Learning for Multi-Task Forensic Document Analysis
