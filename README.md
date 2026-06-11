@@ -235,11 +235,13 @@ If you use this repository or associated materials in your research, please cite
 
 ```text
 R. Nasir et al.,
-"Few-Shot Hyperspectral Representation Learning for Multi-Task Forensic Document Analysis,"
-submitted for publication.
+
+"Few-Shot Hyperspectral Representation Learning for Multi-Task Forensic Document Analysis."
+
+The associated manuscript is currently under review..
 ```
 
----
+
 
 # License
 
