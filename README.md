@@ -31,6 +31,7 @@ This repository provides:
 
 # Repository Structure
 
+```text
 few-shot-hyperspectral-document-forensics/
 │
 ├── code/
@@ -56,6 +57,8 @@ few-shot-hyperspectral-document-forensics/
 ├── LICENSE
 ├── .gitignore
 └── CITATION.cff
+```
+
 ```
 
 ```
