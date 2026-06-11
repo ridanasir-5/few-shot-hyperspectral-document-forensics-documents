@@ -177,13 +177,15 @@ Suggested execution order:
 ```text
 1. hyperspectral_forensics_pipeline_v3.py
    ↓
-   Data preprocessing, episodic sampling, model training, and evaluation
-   on the iVision HHID dataset.
+   Unified few-shot forensic pipeline for ProtoNet training (or checkpoint loading),
+   multi-task forensic evaluation, and cross-dataset analysis using the
+   iVision HHID and UWA-WIHSI datasets.
 
 2. hyperspectral_forensics_pipeline_v4.py
    ↓
-   Data preprocessing, episodic sampling, model training, and evaluation
-   on the UWA-WIHSI dataset.
+   Final evaluation pipeline employing a frozen iVision HHID ProtoNet backbone
+   and a dedicated UWA-WIHSI ProtoNet model for dataset-specific forensic
+   analysis and bidirectional cross-dataset zero-shot evaluation.
 
 3. best_protonet_crosssplit.pt / best_protonet_uwa.pt
    ↓
