@@ -172,17 +172,42 @@ Typical workflow:
 
 Suggested execution order:
 
+### Suggested Execution Order
+
 ```text
-1_dataset_index.ipynb
-↓
-2_sentence_tensor_generation.ipynb
-↓
-3_pair_generation.ipynb
-↓
-4_model_training.ipynb
-↓
-5_evaluation.ipynb
+1. hyperspectral_forensics_pipeline_v3.py
+   ↓
+   Data preprocessing, episodic sampling, model training, and evaluation
+   on the iVision HHID dataset.
+
+2. hyperspectral_forensics_pipeline_v4.py
+   ↓
+   Data preprocessing, episodic sampling, model training, and evaluation
+   on the UWA-WIHSI dataset.
+
+3. best_protonet_crosssplit.pt / best_protonet_uwa.pt
+   ↓
+   Load the best-performing checkpoints for reproducibility and
+   inference without retraining.
+
+4. hyperspectral_forensics_ablation.py
+   ↓
+   Perform ablation studies on the iVision HHID dataset to investigate
+   the influence of architectural and optimization choices.
+
+5. hyperspectral_forensics_ablation_uwa.py
+   ↓
+   Perform ablation studies on the UWA-WIHSI dataset and compare the
+   effects of different design decisions under controlled conditions.
+
+6. Review the generated outputs in:
+   ↓
+   results/ivision_hhid/
+   results/uwa_wihsi/
+   results/zero_shot/
+   results/ablation/
 ```
+
 
 ---
 
